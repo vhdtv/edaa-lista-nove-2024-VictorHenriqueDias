@@ -29,8 +29,7 @@ public class App {
                 Integer wineServings = Integer.parseInt(coluna[3]);
                 Double totalLitresOfPureAlcohol = Double.parseDouble(coluna[4]);
 
-                Drinks drink = new Drinks(country, beerServings, spiritServings, wineServings, totalLitresOfPureAlcohol);
-                listaDeDrinks.add(drink);
+                listaDeDrinks.add(new Drinks(country, beerServings, spiritServings, wineServings, totalLitresOfPureAlcohol));
 
             }
             scanner.close();
